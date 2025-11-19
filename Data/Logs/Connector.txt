@@ -1,0 +1,7 @@
+﻿2025/11/17 00:32:33.993|       |Connector |Connect
+2025/11/17 00:32:33.998|Error  |Basket    |System.InvalidOperationException: At least one connection should be made.
+   at StockSharp.Algo.BasketMessageAdapter.InternalSendInMessage(Message message)
+   at StockSharp.Algo.BasketMessageAdapter.OnSendInMessage(Message message)
+2025/11/17 00:32:34.000|Error  |Connector |System.InvalidOperationException: At least one connection should be made.
+   at StockSharp.Algo.BasketMessageAdapter.InternalSendInMessage(Message message)
+   at StockSharp.Algo.BasketMessageAdapter.OnSendInMessage(Message message)

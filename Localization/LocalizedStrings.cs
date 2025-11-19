@@ -22,6 +22,9 @@ public static partial class LocalizedStrings
 	{
 		public string Localize(string enStr)
 			=> enStr.Translate();
+
+		public string LocalizeByKey(string key)
+			=> GetString(key);
 	}
 
 	private class Translation

@@ -1,0 +1,43 @@
+﻿{
+  "OrdersKeepCount": 1000,
+  "UpdateSecurityLastQuotes": true,
+  "UpdateSecurityByLevel1": true,
+  "UpdateSecurityByDefinition": true,
+  "UpdatePortfolioByChange": true,
+  "OverrideSecurityData": false,
+  "CheckSteps": false,
+  "RiskManager": {
+    "type": "StockSharp.Algo.Risk.RiskManager, StockSharp.Algo",
+    "settings": {
+      "Rules": [],
+      "LogLevel": "Inherit",
+      "Name": "RiskManager"
+    }
+  },
+  "Adapter": {
+    "InnerAdapters": [],
+    "LogLevel": "Inherit",
+    "Name": "Basket"
+  },
+  "MarketTimeChangedInterval": "00:00:00.0100000",
+  "SupportAssociatedSecurity": false,
+  "SubscriptionsOnConnect": [
+    {
+      "MessageType": "StockSharp.Messages.SecurityMessage, StockSharp.Messages"
+    },
+    {
+      "MessageType": "StockSharp.Messages.PositionChangeMessage, StockSharp.Messages"
+    },
+    {
+      "MessageType": "StockSharp.Messages.ExecutionMessage, StockSharp.Messages",
+      "Arg": {
+        "type": "StockSharp.Messages.ExecutionTypes, StockSharp.Messages",
+        "value": "Transaction"
+      }
+    }
+  ],
+  "IsRestoreSubscriptionOnNormalReconnect": true,
+  "IsAutoUnSubscribeOnDisconnect": true,
+  "LogLevel": "Inherit",
+  "Name": "Connector"
+}

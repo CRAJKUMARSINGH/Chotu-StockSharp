@@ -225,6 +225,9 @@ public abstract class MessageAdapterWrapper : Cloneable<IMessageChannel>, IMessa
 	/// <inheritdoc />
 	public DateTimeOffset CurrentTime => InnerAdapter.CurrentTime;
 
+	/// <inheritdoc />
+	public DateTime CurrentTimeUtc => InnerAdapter.CurrentTimeUtc;
+
 	bool ILogSource.IsRoot => InnerAdapter.IsRoot;
 
 	event Action<LogMessage> ILogSource.Log
